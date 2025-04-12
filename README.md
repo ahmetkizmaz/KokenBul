@@ -57,10 +57,11 @@ Not: Komut satırında --text veya --file parametrelerinden birini belirtmeniz g
 Kelime kökenleri:
 ----------------
 farklı: Türkçe
-köken: Arapça
-sözcük: Türkçe
+köken: Türkçe
+kelime: Arapça
 dil: Türkçe
-zenginleştirmek: Farsça
+zengin: Farsça
+kılmak: Türkçe
 ...
 
 Köken dağılımı:
