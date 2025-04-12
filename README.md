@@ -19,7 +19,7 @@ KökenBul, Türkçe metinlerdeki kelimelerin kökenlerini analiz eden bir Python
 
 1. Bu depoyu klonlayın:
 ```
-git clone https://github.com/username/KokenBul.git
+git clone https://github.com/ahmetkizmaz/KokenBul.git
 cd KokenBul
 ```
 
@@ -74,7 +74,3 @@ Bilinmiyor: 1 kelime (5.0%)
 ## Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
-
-## Katkıda Bulunma
-
-Hata raporları, özellik önerileri ve pull request'ler için GitHub'da issue açabilirsiniz.
