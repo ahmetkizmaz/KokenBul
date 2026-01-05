@@ -1,57 +1,62 @@
 # KökenBul
 
-KökenBul, Türkçe metinlerdeki kelimelerin kökenlerini analiz eden bir Python aracıdır. Bu araç, TDK Sözlük API'sini kullanarak kelimelerin hangi dilden geldiğini tespit eder ve metin içindeki farklı kökenli kelimelerin dağılımını gösterir.
+Analyze the linguistic origins of Turkish texts with Python
 
-## Özellikler
+KokenBul is a Python-based tool designed to analyze the etymological origins of words in Turkish texts. By leveraging natural language processing and the TDK Dictionary API, it identifies the source language of each word and provides a clear breakdown of origin distributions within a text.
 
-- Türkçe metinleri doğal dil işleme teknikleriyle analiz eder
-- Kelimelerin köklerini (lemma) çıkarır
-- TDK sözlük veritabanı üzerinden köken bilgisini sorgular
-- Metin içindeki kelimelerin köken dağılımını hesaplar
+This project is useful for linguistic analysis, academic research, digital humanities projects, or anyone interested in the historical composition of Turkish vocabulary.
 
-## Gereksinimler
+## Features
 
-- Python 3.6 veya üzeri
+- NLP-based analysis of Turkish texts
+- Lemmatization (root/lemma extraction)
+- Word origin detection using TDK dictionary API
+- Statistical breakdown of word origins (Turkish, Arabic, Persian, etc.)
+- Supports direct text input or file-based analysis
+
+## Requirements
+
+- Python 3.6 or higher
 - stanza
 - requests
 
-## Kurulum
+## Installation
 
-1. Bu depoyu klonlayın:
+1. Clone this repository:
 ```
 git clone https://github.com/ahmetkizmaz/KokenBul.git
 cd KokenBul
 ```
 
-2. Gerekli Python paketlerini yükleyin:
+2. Install the required Python packages:
 ```
 pip install stanza requests
 ```
 
-3. İlk kullanımda Türkçe dil modelini indirin:
+3. Download the Turkish NLP model (first run only):
 ```
 python KokenBul.py --download
 ```
 
-## Kullanım
+## Usage
 
-KökenBul'u iki farklı şekilde kullanabilirsiniz:
+KokenBul can be used in two ways:
 
-### 1. Doğrudan metin analizi:
-
-```
-python KokenBul.py --text "Analiz etmek istediğiniz metin buraya"
-```
-
-### 2. Dosyadan metin analizi:
+### 1. Direct text analysis:
 
 ```
-python KokenBul.py --file metin_dosyasi.txt
+python KokenBul.py --text “The text you want to analyze goes here”
 ```
 
-Not: Komut satırında --text veya --file parametrelerinden birini belirtmeniz gerekmektedir.
+### 2. Text analysis from a file:
 
-## Çıktı Örneği
+```
+python KokenBul.py --file text_file.txt
+```
+
+Note: You must specify either the --text or --file parameter on the command line.
+
+## Output Example
 
 ```
 Kelime kökenleri:
@@ -72,6 +77,7 @@ Farsça: 2 kelime (10.0%)
 Bilinmiyor: 1 kelime (5.0%)
 ```
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
+This project is licensed under the MIT License.
+See the `LICENSE` file for more information.
